@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Redressed&family=Big+Shoulders+Stencil+Text:wght@800&display=swap');
+body{
+    font-family: 'Redressed', cursive;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+}
+.name_highlight{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    color: orange;
+}
+.half_width{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+.profile_photo{
+    max-width: 100%;
+    height: auto;
+}
+section{
+    height: 500px;
+    margin-bottom: 100px;
+}
+.top_banner{
+    background-image: url("images/top-banner.png");
+    background-repeat: no-repeat;
+}
+.link_button{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg, orange, tomato);
+    color: white;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+.resume_section{
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
