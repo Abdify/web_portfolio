@@ -2,6 +2,7 @@
 body{
     font-family: 'Redressed', cursive;
     margin: 0;
+    text-align: justify;
 }
 h1{
     font-size: 50px;
@@ -27,6 +28,7 @@ section{
 .top_banner{
     background-image: url("images/top-banner.png");
     background-repeat: no-repeat;
+    background-position: left;
 }
 .link_button{
     text-decoration: none;
@@ -39,7 +41,7 @@ section{
 
 }
 .resume_section{
-    background-image: url(images/dream-bg.png);
+    background-image: url("images/dream-bg.png");
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -51,8 +53,7 @@ section{
 .experience_box{
     height: 60%;
     box-shadow: 10px 10px 30px gray;
-    border-left: 10px solid;
-    
+    border-left: 10px solid;    
 }
 .experience_box:nth-child(2){
     border-image: linear-gradient(180deg, red, rgb(224, 193, 18));
