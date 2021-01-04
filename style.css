@@ -4,42 +4,69 @@ body{
     margin: 0;
     text-align: justify;
 }
-h1{
-    font-size: 50px;
-}
-.orange_highlight{
-    font-family: 'Big Shoulders Stencil Text', cursive;
-    color: orange;
-}
-.half_width{
-    width: 35%;
-    float: left;
-    margin-left: 5%;
-    padding-left: 2%;
-}
-.profile_photo{
-    max-width: 100%;
-    height: auto;
-}
+
 section{
     height: 500px;
     margin-bottom: 100px;
-}
-.top_banner{
-    background-image: url("images/top-banner.png");
-    background-repeat: no-repeat;
+        
+    }
+.top_section{
+    background-image: url("images/bg6.png");
     background-position: left;
+    background-repeat: no-repeat;
+} 
+.half_width{
+    float: left;
+    width: 35%;
+    margin: 20px 50px;
+    padding: 2%;
 }
-.link_button{
-    text-decoration: none;
-    padding: 10px 20px;
-    background-image: linear-gradient(45deg, orange, tomato);
-    color: white;
-    font-family: 'Big Shoulders Stencil Text', cursive;
-    font-weight: 700;
-    border-radius: 5px;
+h1{
+    font-size: 2.5rem;
 
 }
+.red_highlight{
+    color: red;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+.half_width img{
+    max-width: 100%;
+    height: auto;
+}
+.btn{
+    display: block;
+    margin: 10px;
+    padding: 10px 30px;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    text-decoration: none;
+    text-align: center;
+    color: white;            
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 0.8s all ease;
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    z-index: 1;
+    position: relative;
+}
+.btn::before{
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF652F;
+    width: 0%;
+    z-index: -1;
+    transition: all 1s;
+}
+.btn:hover::before{
+    width: 100%;
+    
+}
+.btn:hover{
+    color: #272727;
+}
+
 .resume_section{
     background-image: url("images/bg6.png");
     background-repeat: no-repeat;
@@ -49,25 +76,27 @@ section{
     background-image: url("images/bg4m.png");
     background-repeat: no-repeat;
     background-position: right;
-    margin: 0;
-    position: relative;
-}
-.experience_box{
-    height: 60%;
-    background-color: white;
-    box-shadow: 10px 10px 30px gray;
-    border-left: 10px solid;    
-}
-.experience_box:nth-child(2){
-    border-image: linear-gradient(180deg, red, rgb(224, 193, 18));
+    margin: 0 0 0 10%;
+} 
+.exp_box{
+    height: 50%;
+    width: 30%;
+    border-left: 8px solid;
+    border-image: linear-gradient(to bottom, orange, red);
     border-image-slice: 1;
+    box-shadow: 0 0 5px orange;
+    transition: 1s all ease;
+
 }
-.experience_box:nth-child(3){
-    border-image: linear-gradient(180deg, blue, cyan);
+.exp_box:nth-child(2){
+    border-image: linear-gradient(to bottom, blue, cadetblue);
     border-image-slice: 1;
+    box-shadow: 0 0 5px cadetblue;
 }
-.foot{
-    position: absolute;
-    bottom: 0;
-    left: 40%;
+.exp_box:hover{
+    box-shadow: 10px 0 50px orange;
 }
+.exp_box:nth-child(2):hover{
+    box-shadow: 10px 0 50px cadetblue;
+}
+
