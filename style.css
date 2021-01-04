@@ -6,12 +6,12 @@ body{
 h1{
     font-size: 50px;
 }
-.name_highlight{
+.orange_highlight{
     font-family: 'Big Shoulders Stencil Text', cursive;
     color: orange;
 }
 .half_width{
-    width: 40%;
+    width: 35%;
     float: left;
     margin-left: 5%;
     padding-left: 2%;
@@ -42,4 +42,23 @@ section{
     background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+.experience_section{
+    background-image: url("images/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.experience_box{
+    height: 60%;
+    box-shadow: 10px 10px 30px gray;
+    border-left: 10px solid;
+    
+}
+.experience_box:nth-child(2){
+    border-image: linear-gradient(180deg, red, rgb(224, 193, 18));
+    border-image-slice: 1;
+}
+.experience_box:nth-child(3){
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
 }
